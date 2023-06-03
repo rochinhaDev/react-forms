@@ -1,55 +1,58 @@
 import "./App.css";
 import FormComplexos from "./components/FormComplexos";
 import FormSimples from "./components/FormSimples";
-
+import FormIdade from "./components/FormIdade";
+import FormLogin from "./components/FormLogin";
+import MusicList from "./components/MusicList";
 function App() {
-   return (
-      <>
-         <div>
-            <h1>Form Simples</h1>
-            <p>
-               São formulários que cuidam apenas de um campo de input. Nesse
-               exemplo abaixo, o componente FormSimples tem apenas um campo
-               "Nome".
-            </p>
-            <p>
-               nota: como o state é referente a apenas um input, não tem
-               necessidade de guardar ele dentro de um objeto.
-            </p>
+  return (
+    <>
+      <div>
+        <h1>Form Simples</h1>
+        <p>
+          São formulários que cuidam apenas de um campo de input. Nesse exemplo
+          abaixo, o componente FormSimples tem apenas um campo "Nome".
+        </p>
+        <p>
+          nota: como o state é referente a apenas um input, não tem necessidade
+          de guardar ele dentro de um objeto.
+        </p>
 
-            <code>const [nome, setNome] = useState("");</code>
+        <code>const [nome, setNome] = useState("");</code>
 
-            <FormSimples />
-            {/* INVOCAR AQUI O COMPONENTE DO EXERCÍCIO FORM IDADE */}
-         </div>
+        <FormSimples />
+        <FormIdade />
+      </div>
 
-         <div className="notas">
-            <p>
-               O React não tem um sistema de formulários, então é necessário
-               criar um state para cada campo de input, então se tornam inputs
-               controlados, ou seja, possuem um atributo value que é atribuido a
-               um state. Quando o usuário digita algo no input, o state é
-               atualizado e o input é renderizado novamente com o novo valor.
-            </p>
-         </div>
+      <div className="notas">
+        <p>
+          O React não tem um sistema de formulários, então é necessário criar um
+          state para cada campo de input, então se tornam inputs controlados, ou
+          seja, possuem um atributo value que é atribuido a um state. Quando o
+          usuário digita algo no input, o state é atualizado e o input é
+          renderizado novamente com o novo valor.
+        </p>
+      </div>
 
-         <div>
-            <h1>Form Complexo </h1>
-            <p>
-               São formulários que possuem vários inputs atribuidos a um mesmo
-               state. É criado um objeto onde cada propriedade é resposável por
-               guardar o valor de um input. No exemplo abaixo, o componente
-               FormComplexo tem dois campos "Nome" e "Idade".
-            </p>
-            <small>Olhe seu console enquanto digita</small>
+      <div>
+        <h1>Form Complexo </h1>
+        <p>
+          São formulários que possuem vários inputs atribuidos a um mesmo state.
+          É criado um objeto onde cada propriedade é resposável por guardar o
+          valor de um input. No exemplo abaixo, o componente FormComplexo tem
+          dois campos "Nome" e "Idade".
+        </p>
+        <small>Olhe seu console enquanto digita</small>
 
-            <FormComplexos />
-            {/* INVOCAR AQUI O COMPONENTE DO EXERCÍCIO FORM LOGIN */}
-         </div>
+        <FormComplexos />
+        <FormLogin />
+      </div>
 
-         <div id="EXERCÍCIO 3 COLOCAR DENTRO DESSA DIV"></div>
-      </>
-   );
+      <div id="EXERCÍCIO 3 COLOCAR DENTRO DESSA DIV">
+        <MusicList />
+      </div>
+    </>
+  );
 }
 
 export default App;
