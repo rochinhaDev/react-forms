@@ -32,6 +32,10 @@ Renderize na tela uma lista com todas as músicas adicionadas. (Dica: use o mét
 Não esqueça de importar e invocar o componente no App.js.
 Use o código das nossas antigas aulas como exemplos. Dica: Todo List
 
+
 Exercicio 4 - Faça um botão que mostra e esconde o formulário de Adicionar musica
 
+Code Along: Criar uma search bar com .filter()
+
+Bonus: Usar outros tipos de inputs como o select e o radio button
 
