@@ -1,0 +1,37 @@
+
+Exercício 1 - Form Simples
+
+Cria um componente chamado "FormIdade" e salve ele dentro da pasta "components".
+Esse componente precisa ter um formulário com um input do tipo "number" e um botão para salvar.
+Crie um state para guardar o valor do input.
+Quando o botão for clicado, mostre na tela um alerta com a idade digitada pelo usuário.
+
+Não esqueça de importar e invocar o componente no App.js.
+Use o componente FormSimples.jsx como exemplo.
+
+
+Exercício 2 - Form Complexos
+
+Crie um componente chamado "FormLogin" e salve ele dentro da pasta "components".
+Esse componente precisa ter um formulário com dois inputs: um para email e outro para senha.
+Crie um state para guardar o valor do input.
+Quando o botão for clicado, mostre na tela um alerta com os dados digitados pelo usuário.
+
+Não esqueça de importar e invocar o componente no App.js.
+Use o componente FormComplexos.jsx como exemplo.
+
+
+Exercicio 3 - Guardar as informações do formulário em uma array
+
+Crie um componente chamado MusicsList e salve ele dentro da pasta "components".
+Esse componente precisa ter um formulário com dois inputs: um para o nome da música e outro para o nome do artista.
+Crie um state chamado musics e inicialize ele como um array vazio. É nesse state que vamos guardar as informações digitadas pelo usuário.
+Quando o botão for clicado, adicione as informações digitadas pelo usuário no state musics.
+Renderize na tela uma lista com todas as músicas adicionadas. (Dica: use o método map para percorrer o array musics e renderizar cada música na tela)
+
+Não esqueça de importar e invocar o componente no App.js.
+Use o código das nossas antigas aulas como exemplos. Dica: Todo List
+
+Exercicio 4 - Faça um botão que mostra e esconde o formulário de Adicionar musica
+
+
